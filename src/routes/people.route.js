@@ -10,8 +10,8 @@ peopleRouter.get("/buscar", (req,res)=> {
 });
 
 peopleRouter.post("/criar", (req,res)=> {
-    const {id,name,biography, category,photo_url} = req.body;
-    createPeople(id,name,biography, category,photo_url);
+    const {id,name, astronomer, awards, biography, category,photo_url} = req.body;
+    createPeople(id,name, astronomer, awards, biography, category,photo_url);
     res.status(200).json({message:"sucess"});
     return res 
 
